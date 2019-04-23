@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
@@ -33,12 +32,6 @@ class Dashboard extends Component {
             </div>
         )
     }
-}
-
-Dashboard.propTypes = {
-    credit: PropTypes.number,
-    debt: PropTypes.number,
-    summary: PropTypes.array
 }
 
 const mapStateToProps = state => ({summary: state.dashboard.summary})
